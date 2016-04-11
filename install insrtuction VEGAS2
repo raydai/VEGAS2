@@ -1,0 +1,40 @@
+## VEGAS2: Gene-based test software using 1000 Genomes reference sets.
+## This instruction is based on the user mannual from Aniket Mishra and Stuart Macgregor.
+## Version: 16:09:002
+## 09/16/2014
+## For more detail description, please refer to their website: https://vegas2.qimrberghofer.edu.au
+
+## connect to your linux server (This step is not nesacerry, for someone who wants to install on their server)
+ssh user_account@server_IP
+
+## Creat a folder for you VEGAS2
+mkdir VEGAS2
+cd VEGAS2
+
+## download VEGAS from website. 
+wget https://vegas2.qimrberghofer.edu.au/VEGAS2offline.tgz
+
+## Unzip and untar this archieve. (I know for differnet version of linux system, may use different commend here)
+## I saw the oringinal instruction here does not include the "-xf", and it did not work for me.
+## You can use "man" to check which the options that you may use. such as "man tar"
+tar -xf zxvf zVEGAS2offline.tgz
+cd VEGAS2offline
+
+## After unzip, we strat to install.
+##Please notice here. There are two path you need to setup for VEGAS2database and VEGAS2scripts
+# Some tips, you can use "pwd" commend to get your current path. So you can copy and past on the sh commend above.
+
+## For example 
+##raydai-3:~ VEGAS2offline$ pwd
+##/Users/raydai/VEGAS2offline
+
+## then I replaced "/path/of" by "/Users/raydai/VEGAS2offline"
+##such as "sh vegas2.config /Users/raydai/VEGAS2offline/VEGAS2database /Users/raydai/VEGAS2offline/VEGAS2scripts"
+
+
+sh vegas2.config /path/of/VEGAS2database /path/of/VEGAS2scripts
+
+##Then you can start to analyze your data
+
+
+
