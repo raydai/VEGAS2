@@ -6,6 +6,8 @@
 
 ## connect to your linux server (This step is not nesacerry, for someone who wants to install on their server)
 ssh user_account@server_IP
+Password
+##For security reasons, Terminal will not display what you type when entering passwords. Just type your password and hit the return key.
 
 ## Creat a folder for you VEGAS2
 mkdir VEGAS2
