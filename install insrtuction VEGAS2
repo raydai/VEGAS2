@@ -14,7 +14,7 @@ mkdir VEGAS2
 cd VEGAS2
 
 # download VEGAS from website. 
-wget https://vegas2.qimrberghofer.edu.au/VEGAS2offline.tgz
+wget https://vegas2.qimrberghofer.edu.au/zVEGAS2offline.tgz
 
 # Unzip and untar this archieve. (I know for differnet version of linux system, may use different commend here)
 # I saw the oringinal instruction here does not include the "-xf", and it did not work for me.
